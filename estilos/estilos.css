@@ -16,7 +16,7 @@ body {
 	padding: 0;
 	word-wrap:break-word !important;
 	font-family: 'Open Sans', sans-serif;
-    font-size: medium;
+    font-size: 1em;
 }
 
 .logo {
@@ -29,6 +29,7 @@ header {
     background: #333;
     padding: 0em 0em 0em 0em; /* top right bottom left*/
     color: #e6e6e6;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     line-height: 1em;
 }
@@ -47,6 +48,8 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 1em;
   }
   
@@ -85,3 +88,56 @@ header {
       text-align: left;
     }
   }
+
+  /* BOTON FLOTANTE DE WHATSAPP */
+
+.btn-wsp {
+    position: fixed;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 3em;
+    bottom:10px;
+    left:10px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:1em;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
+.btn-wsp img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* BOTON FLOTANTE IR ARRIBA */
+
+.boton-up{
+  position: fixed;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.7em;
+  bottom:10px;
+  right:10px;
+  background:#00AFF0;
+  color:#FFF;
+  border-radius:10px;
+  text-align:center;
+  font-size:20px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+
+.boton-up:hover{
+  background:#F5821E;
+}
