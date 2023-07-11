@@ -46,7 +46,36 @@
       <tr>
         <td>
           <br>
-          <a href="branding_ramiro.html"><img src="./imagenes/brading/ramiro/ramiro_logo.png" class="marcas" alt="Carnes Ramio"></a>
+          <img class="mySlidesx" src="./imagenes/brading/ramiro/ramiro_marca.png">
+        <img class="mySlidesx" src="./imagenes/brading/ramiro/ramiro_tarjetas.png">
+        <img class="mySlidesx" src="./imagenes/brading/ramiro/ramiro_indumentaria.png">
+        <img class="mySlidesx" src="./imagenes/brading/ramiro/ramiro_indumentaria2.png">
+        <img class="mySlidesx" src="./imagenes/brading/ramiro/ramiro_precios2.png">
+        <img class="mySlidesx" src="./imagenes/brading/ramiro/ramiro_calendario.png"><br>
+
+        <div style="text-align: center;"><button class="boton_slider" onclick="plusDivs(-1)"><i class="fa-solid fa-caret-left"></i> Pág. anterior</button> <button class="boton_slider" onclick="plusDivs(1)">Pág. siguiente <i class="fa-solid fa-caret-right"></i></button><br></div>
+        <br>
+
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlidesx");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+
         <br></td>
       </tr>
     </table>

@@ -1,22 +1,27 @@
 * {
-    margin: 0em 0em 0em 0em; /* top right bottom left*/
-    padding: 0em;
-    box-sizing: border-box;
+  margin: 0em 0em 0em 0em; /* top right bottom left*/
+  padding: 0em;
+  box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #e7d6bb;
-    color: #29231d;
-	margin: 0;
-	padding: 0;
-	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #424242;
+  color: #29231d;
+margin: 0;
+padding: 0;
+word-wrap:break-word !important;
+font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+p {
+  line-height: 1em;
+  padding: 0em 0em 0.5em 0em; /* top right bottom left*/
 }
 
 .logo {
@@ -34,28 +39,65 @@ header {
     line-height: 1em;
 }
 
-.tabla_imagen_bloque .texto_bloque h4 {
-  font-size: 1.5em;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1em;
-  text-align: center;
-}
-
-.tabla_imagen_bloque .texto_bloque {
-  width: 80%;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  padding: 0.5em;
+.tabla_imagen_bloque {
+  width: 90%;
   border-radius: 5px;
-  box-shadow: 0 5px 25px rgb(1 1 1 / 9%);
+  box-shadow: 0 5px 25px rgba(6, 6, 6, 0.9);
   background-color: rgba(255, 255, 255, 0.8);
-  line-height: 1.5em;
   font-size: 1em;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   color: #212121;
   margin: 0 auto;
+}
+
+.marcas {
+  width: 70%;
+  margin: 0 auto;
+  display: block; /* cetrar imagen */
+    
+}
+
+/* SLIDER DE IMAGENES */
+
+.mySlidesx {
+  display: none;
+  margin: 0 auto;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.boton_slider {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 25%;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;  
+  float: center;
+  position: relative !important;
+  }
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+
+  .mySlidesx {
+    width: 90%;
+  }
+
+  .boton_slider {
+    width: auto;
+    margin: 0 auto;
+  }
+
 }
 
 /* SECCION FOOTER */
