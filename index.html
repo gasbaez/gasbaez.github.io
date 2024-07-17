@@ -1,91 +1,535 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
-    <title>Gaston Baez - Portfolio</title>
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <script src="https://kit.fontawesome.com/53b4b75762.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./imagenes/gb_favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Abya Yala expediciones">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Abya Yala Expediciones" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content="Abya Yala Expediciones"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Abya Yala Expediciones" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Abya Yala Expediciones</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="images/favicon_negro.svg" media="(prefers-color-scheme: dark)">
 </head>
-<body>
-  <header>
-    <p id="inicio"><img src="./imagenes/gb_logo_blanco.svg" class="logo" alt="logo">GASTON BAEZ - PORTFOLIO</p>
-
-<!-- MENU RESPONSIVE -->
-    <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active"><i class="fa-solid fa-house-chimney"></i> INICIO</a>
-      <a href="./contact.html">CONTACTO</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-
-<!-- FIN DE MENU RESPONSIVE -->
-
-    </header>
-
-    <br>
-
-    <table class="tabla_imagen_bloque">
-      <tr>
-        <td>
-          <br>
-          <a href="branding_ramiro.html"><img src="./imagenes/brading/ramiro/ramiro_logo.png" class="marcas" alt="Carnes Ramio"></a>
-        <br>
-        <a href="branding_gestionar.html"><img src="./imagenes/brading/gestionar/gestionar_logo.png" class="marcas" alt="Gestionar"></a>
-      <br>
-    </td>
-      </tr>
-    </table>
-    <br>
-
-    <footer>
+<body data-spy="scroll" data-target=".fixed-top">
     
-      <div style="overflow:auto">
-          <div class="left">
-  
-            <img src="./imagenes/gb_logo_blanco.svg" class="logo_big" alt="logo" valign="center">
-            <p>GB DISEÑOS</p>
-        
-      </div>
-        
-          <div class="center">
-
-            <i class="fa-brands fa-whatsapp"></i> +549 388 5060518<br>
-            <i class="fa-solid fa-envelope"></i> gbdisenios@gmail.com<br>
-
-          </div>
-        
-          <div class="right">
-
-            <i class="fa-brands fa-linkedin fa-2xl"></i>  <i class="fa-brands fa-square-facebook fa-2xl"></i>  <i class="fa-brands fa-square-twitter fa-2xl"></i>  <i class="fa-brands fa-square-instagram fa-2xl"></i>
-    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-        <br>
-  
-  </footer>
+    </div>
+    <!-- end of preloader -->
+    
 
-  <a href="https://api.whatsapp.com/send?phone=5493885060518" class="btn-wsp" target="_blank">
-    <img src="./iconos/wapp.svg"> 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
-    <a href="#inicio" class="boton-up">
-        <i class="fa-solid fa-caret-up"></i>
-    </a>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/ayex_logo.svg" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
 
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(actual)</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">EXPEDICIONES</a>
+                </li>
+                
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">QUIENES SOMOS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TÉRMINOS Y CONDICIONES</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">POLÍTICA DE PRIVACIDAD</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACTO</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- icono wapp -->
+    <a href="https://api.whatsapp.com/send?phone=5493884629527" class="btn-wsp" target="_blank">
+	    <img src="./images/wapp.svg"> 
+	</a>
+    <!-- end icono wapp -->
+
+    <!-- Slider -->
+    <div>
+        <img class="mySlides w3-animate-fading" src="images/header-background.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/header-background2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/header-background3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/header-background-4.jpg" style="width:100%">
+    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 7000);    
+}
+</script>
+    <!-- end of Slider -->
+
+    <!-- Services -->
+    <div id="services" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">EXPEDICIONES</div>
+                    <h2>Una expedición diferente<br> a tu medida</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-1.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">San Francisco - Alto Calilegua</h3>
+                            <p>Descripción del paquete</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Nivel principiante</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Para relajarse y disfrutar del paisaje</div>
+                                </li>
+                            </ul>
+                            <p class="price">Desde <span>$199</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a href="expedicion01.html"><div class="btn-solid-reg page-scroll">DETALLES</div></a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-2.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Nombre de la Expedición</h3>
+                            <p>Deltalles de la expedición</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Nivel intermedio</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Para disfrutar el paisaje e ir más lejos</div>
+                                </li>
+                            </ul>
+                            <p class="price">Desde <span>$299</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a href="expedicion01.html"><div class="btn-solid-reg page-scroll">DETALLES</div></a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/services-3.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Nombre de la expedición</h3>
+                            <p>Detalles de la expedición</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Nivel alto</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Para espíritus aventureros que les gusten los desafíos</div>
+                                </li>
+                            </ul>
+                            <p class="price">Desde <span>$299</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a href="expedicion01.html"><div class="btn-solid-reg page-scroll">DETALLES</div></a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
+
+    <!-- About -->
+    <div id="about" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Quienes somos</h2>
+                    <p class="p-heading">We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-1.png" alt="alternative">
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large">John Whitelong</p>
+                        <p class="job-title">General Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-2.png" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">Veronique Smith</p>
+                        <p class="job-title">Business Developer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-3.png" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">Chris Zimerman</p>
+                        <p class="job-title">Online Marketer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="images/team-4.png" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">Mary Villalonga</p>
+                        <p class="job-title">Community Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of About -->
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title">CONTACTO</div>
+                        <h2>Contactanos Usando El Formulario</h2>
+                        <p>Podés pasar por nuestra oficina por una taza de café o usar el siguiente formulario de contacto por cualquier duda o consulta</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>Av. Alte. Brown 213, Barrio Alte. Brown, CP 4600, Jujuy, Argentina</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:5493884629527">+549 388 4629527</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@ayex.com.ar">info@ayex.com.ar</a></li>
+                        </ul>
+                        <h3>Seguinos en nuestras redes sociales</h3>
+
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-pinterest fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nombre</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cphone" required>
+                            <label class="label-control" for="cphone">Teléfono</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="ccountry" required>
+                            <label class="label-control" for="cname">País</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Su mensaje</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Estoy de acuerdo con lo establecido en <a href="terms-conditions.html">Términos y condiciones</a> y <a href="privacy-policy.html">Política de privacidad</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">ENVIAR MENSAJE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Unas palabras acerca de Abya Yala</h4>
+                        <p class="white">We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Enlaces</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="#your-link">startupguide.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="terms-conditions.html">Términos & Condiciones</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.html">Política de Privacidad</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Herramientas</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">businessgrowth.com</a>
+                            </li>
+                            <li>
+                               <a class="white" href="#your-link">influencers.com</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#your-link">optimizer.net</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Socios</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">unicorns.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">staffmanager.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">association.gov</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2024 <a href="https://api.whatsapp.com/send?phone=5493885060518">GB Diseños</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
